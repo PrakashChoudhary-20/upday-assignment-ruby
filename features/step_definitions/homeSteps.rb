@@ -1,9 +1,11 @@
 
 Given(/^I open upday application$/) do
+    sleep 5
 end
 
-When(/^I am on homepage$/) do
-    expect(homepage.nav_home.selected?).to be true 
+When(/^I am on (.*?)$/) do |page_title|
+    page_title = page_title.gsub(" ", "_")
+    expect(send(page_title).page_identifier.selected?).to be true 
 end
 
 Then(/^I should see below navigation menu items$/) do |nav_items|

@@ -3,11 +3,7 @@ module Page
         Homepage.new
     end
 
-    def profilePage
-        MyProfile.new
-    end
-
-    def topNews
+    def top_news_page
         TopNews.new
     end
 end
