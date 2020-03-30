@@ -3,7 +3,7 @@ Feature: Homepage Feature
   Background:
     Given I open upday application
 
-  Scenario: Test scenario-1
+  Scenario: Verify items in navigation menu are present
     When I am on homepage
     Then I should see below navigation menu items
       |nav_home|
